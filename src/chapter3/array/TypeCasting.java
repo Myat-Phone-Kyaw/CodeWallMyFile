@@ -6,5 +6,7 @@ public class TypeCasting {
         double b = a;
         int c = (int) b;
         System.out.println(c);
+
+
     }
 }
