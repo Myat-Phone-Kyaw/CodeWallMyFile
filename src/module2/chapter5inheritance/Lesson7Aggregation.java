@@ -3,10 +3,14 @@ package module2.chapter5inheritance;
 public class Lesson7Aggregation {
     public static void main(String[] args) {
         Address1 address1 = new Address1("Yangon", "Thar Se Street", 523);
-        Student1 student1 = new Student1(2, "Myat Phone Kyaw", 23, obj);
-        System.out.println(student1.address.city);
-        System.out.println(address1.city);
-        System.out.println(student1.address.street);
+        Student1 student1 = new Student1(2, "Myat Phone Kyaw", 23, address1);
+//        System.out.println(student1.id);
+//        System.out.println(student1.name);
+//        System.out.println(student1.age);
+//        System.out.println(student1.address.city);
+//        System.out.println(student1.address.street);
+//        System.out.println(student1.address.number);
+        student1.show();
     }
 }
 
@@ -32,5 +36,14 @@ class Student1 {
         this.name = name;
         this.age = age;
         this.address = address;
+    }
+    void show(){
+        System.out.println(address.city);
+        System.out.println(address.street);
+        System.out.println(address.number);
+        System.out.println(id);
+        System.out.println(name);
+        System.out.println(age);
+
     }
 }
