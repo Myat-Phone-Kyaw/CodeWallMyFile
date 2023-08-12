@@ -6,7 +6,7 @@ class Ch11MatchJavaIdentifier {
     /*private static final String STOP = "STOP";
     private static final String VALID = "Valid Java Identifier";
     private static final String INVALID = "Not a valid Java identifier";*/
-    private static final String PATTERN = "[a-zA-Z0-9]";
+    private static final String PATTERN = "a[0-9]*";
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
