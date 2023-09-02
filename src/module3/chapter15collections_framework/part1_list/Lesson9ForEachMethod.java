@@ -1,7 +1,6 @@
-package module3.chapter15collections_framework;
+package module3.chapter15collections_framework.part1_list;
 
 import java.util.*;
-import java.util.function.Consumer;
 
 public class Lesson9ForEachMethod {
     public static void main(String[] args) {
@@ -25,7 +24,5 @@ public class Lesson9ForEachMethod {
         });*/
 
         integers.forEach(System.out::println);
-
-
     }
 }

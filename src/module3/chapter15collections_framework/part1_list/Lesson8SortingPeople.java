@@ -1,7 +1,6 @@
-package module3.chapter15collections_framework;
+package module3.chapter15collections_framework.part1_list;
 
 import java.util.*;
-import java.util.Collections;
 
 public class Lesson8SortingPeople {
     public static void main(String[] args) {
