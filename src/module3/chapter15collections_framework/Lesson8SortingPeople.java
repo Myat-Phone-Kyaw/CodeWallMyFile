@@ -16,6 +16,20 @@ public class Lesson8SortingPeople {
 
         List<Person> personList = Arrays.asList(person, person1, person2, person3, person4, person5, person6, person7);
 
+//        Collections.sort(personList, (o1, o2) -> {
+//            if (o1.points > o2.points){
+//                return -1;
+//            } else if (o1.points == o2.points) {
+//                if(o1.name.equals(o2.name)) {
+//                    o1.points = o2.points;
+//                    return 1;
+//                }
+//                return 1;
+//            }else {
+//                return 1;
+//            }
+//        });
+
         personList.sort((o1, o2) -> {
             if (o1.points < o2.points) {
                 return 1;
@@ -26,13 +40,7 @@ public class Lesson8SortingPeople {
             }
         });
 
-        Collections.sort(personList, (o1, o2) -> {
-            if (o1.points == o2.points) {
-                if (o1.name.compareToIgnoreCase(o2.name) < o2.name.compareToIgnoreCase(o1.name)) return -1;
-            }
-            return 1;
-        });
-
+        System.out.println("Name             Points");
         personList.forEach(person8 -> {
             System.out.println(person8.points + " " + person8.name);
         });
