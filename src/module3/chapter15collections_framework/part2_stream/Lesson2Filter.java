@@ -23,7 +23,5 @@ public class Lesson2Filter {
 //        }).forEach(System.out::println);
 
         integerList.stream().filter(integer -> integer % 2 == 0).forEach(System.out::println);
-
-
     }
 }
