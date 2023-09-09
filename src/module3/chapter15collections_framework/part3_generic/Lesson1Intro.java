@@ -28,11 +28,11 @@ public class Lesson1Intro {
 //      Without Generics, we can store any type of objects.
         List list = new ArrayList<>();
         list.add(3);
-        list.add("Thura Linn");
+        list.add("Myat Phone Kyaw");
 
         List<Integer> list1 = new ArrayList<>();
         list1.add(4);
-//      list1.add("Thura Linn"); //compile time error
+//      list1.add("Myat Phone Kyaw"); //compile time error
 //  ===============================================================
 
 /**
