@@ -4,18 +4,8 @@ import com.google.gson.Gson;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 
-class Person {
-    String name;
-    int age;
-
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-}
-public class chapter1JavaObjectToJson {
+public class Lesson1JavaObjectToJson {
     public static void main(String[] args) {
         Person obj = new Person("Myat Phone Kyaw", 23);
         Person obj1 = new Person("Maverick", 20);
