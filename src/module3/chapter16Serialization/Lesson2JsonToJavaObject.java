@@ -10,7 +10,6 @@ public class Lesson2JsonToJavaObject {
 
         Person person = new Gson().fromJson(str, Person.class);
 
-        System.out.println(person.age);
-
+        System.out.println(person.name);
     }
 }

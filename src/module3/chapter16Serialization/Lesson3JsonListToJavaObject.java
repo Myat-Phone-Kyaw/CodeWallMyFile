@@ -13,7 +13,11 @@ public class Lesson3JsonListToJavaObject {
 
         List personList = gson.fromJson(str, List.class);
 
-//        Person person1 = gson.fromJson(personList.stream().toList(), List.class);
+//        Person person1 = gson.fromJson(personList, Person.class);
         System.out.println(personList);
+        System.out.println();
+
+//        Person person = gson.toJson(str);
+//        System.out.println(person);
     }
 }
