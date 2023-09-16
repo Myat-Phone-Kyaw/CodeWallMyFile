@@ -6,6 +6,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 
+import static module3.chapter18database.MyProjectUtils.*;
+
 public class Lesson4UpdateDataIntoDatabase2 {
     public static void main(String[] args) {
         Scanner scnName = new Scanner(System.in);
@@ -22,9 +24,9 @@ public class Lesson4UpdateDataIntoDatabase2 {
 
         System.out.println(nameIn + ageIn);
         try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/java_in_class6", "root", "");
+            Connection connection = DriverManager.getConnection(url, userName, "");
             Statement statement = connection.createStatement();
-            statement.executeUpdate("update person set name=\""+nameIn+"\", age=\""+ageIn+"\" where id = \""+idIn+"\"");
+            statement.executeUpdate("update students set name=\""+nameIn+"\", age=\""+ageIn+"\" where id = \""+idIn+"\"");
             System.out.println("success");
         } catch (SQLException e) {
             throw new RuntimeException(e);

@@ -5,10 +5,12 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import static module3.chapter18database.MyProjectUtils.*;
+
 public class Lesson5DeleteDataFromDatabase {
     public static void main(String[] args) {
         try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/java_in_class6", "root", "");
+            Connection connection = DriverManager.getConnection(url, userName, "");
             Statement statement = connection.createStatement();
             statement.executeUpdate("delete from students where id = 3");
             System.out.println("success");

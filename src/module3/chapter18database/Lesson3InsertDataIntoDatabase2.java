@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
+import static module3.chapter18database.MyProjectUtils.*;
 
 public class Lesson3InsertDataIntoDatabase2 {
     public static void main(String[] args) {
@@ -21,7 +22,7 @@ public class Lesson3InsertDataIntoDatabase2 {
 
         System.out.println(nameIn + ageIn);
         try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/java_in_class6", "root", "");
+            Connection connection = DriverManager.getConnection(url, userName, "");
             Statement statement = connection.createStatement();
             statement.executeUpdate("insert into students(name, age) values(\""+nameIn+"\", \""+ageIn+"\")");
             System.out.println("success");
