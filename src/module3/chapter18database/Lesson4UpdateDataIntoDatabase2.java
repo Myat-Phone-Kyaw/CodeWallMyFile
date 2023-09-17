@@ -26,7 +26,7 @@ public class Lesson4UpdateDataIntoDatabase2 {
         try {
             Connection connection = DriverManager.getConnection(url, userName, "");
             Statement statement = connection.createStatement();
-            statement.executeUpdate("update students set name=\""+nameIn+"\", age=\""+ageIn+"\" where id = \""+idIn+"\"");
+            statement.executeUpdate("update students set age=\"" + ageIn + "\" where id = \"" + idIn + "\"");
             System.out.println("success");
         } catch (SQLException e) {
             throw new RuntimeException(e);
